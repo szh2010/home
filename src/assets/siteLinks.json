@@ -11,18 +11,18 @@
   },
   {
     "icon": "CompactDisc",
-    "name": "音乐",
+    "name": "酷狗音乐",
     "link": "https://www.kugou.com/"
   },
   {
     "icon": "Compass",
-    "name": "起始页",
+    "name": "青柠起始页",
     "link": "https://limestart.cn/"
   },
   {
     "icon": "Fire",
     "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
+    "link": "https://dailyhot.songziheng.com/"
   },
   {
     "icon": "LaptopCode",
