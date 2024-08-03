@@ -1,8 +1,8 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content">嘻嘻٩(๑>◡<๑)۶ </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped> 
 .more-content {
   display: flex;
   align-items: center;
