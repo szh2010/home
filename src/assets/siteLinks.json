@@ -1,23 +1,23 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "name": "小白站论坛", 
+    "link": "https://zy.xbzhan.com/"  
   },
   {
     "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "name": "星空数学",
+    "link": "https://math.lightsdark.com/"
   },
   {
     "icon": "CompactDisc",
     "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "link": "https://www.kugou.com/"
   },
   {
     "icon": "Compass",
     "name": "起始页",
-    "link": "https://nav.imsyy.top/"
+    "link": "https://limestart.cn/" 
   },
   {
     "icon": "Book",
