@@ -39,9 +39,9 @@ const store = mainStore();
 // 主页站点logo
 const siteLogo = import.meta.env.VITE_SITE_MAIN_LOGO;
 // 站点链接
-const siteUrl = computed(() => {
-  const url = szh;
-  if (!url) return "imsyy.top".split(".");
+const siteUrl = computed(() => { 
+  const url = "szh";      
+  if (!url) return "imsyy.top".split("."); 
   // 判断协议前缀
   if (url.startsWith("http://") || url.startsWith("https://")) {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
