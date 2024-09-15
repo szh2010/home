@@ -39,7 +39,7 @@ const bgRandom = Math.floor(Math.random() * 10 + 1);
 // 更换壁纸链接
 const changeBg = (type) => {
   if (type == 0) {
-    bgUrl.value = "https://bing.lightsdark.com/api/1080p";
+    bgUrl.value = "https://blog.songziheng.com/images/background.jpg";
   } else if (type == 1) {
     bgUrl.value = "https://bing.lightsdark.com/api/1080p";
   } else if (type == 2) {
