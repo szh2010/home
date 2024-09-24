@@ -17,7 +17,7 @@
   {
     "icon": "Compass",
     "name": "星空博客",
-    "link": "https://blog.lightsdark.com/"
+    "link": "https://blog.songziheng.com/"
   },
   {
     "icon": "Fire",
@@ -26,7 +26,37 @@
   },
   {
     "icon": "LaptopCode",
-    "name": "站点监测",
+    "name": "星空资源站", 
+    "link": "https://ziyuan.lightsdark.com/"
+  }
+  {
+    "icon": "Blog",
+    "name": "Chatgpt国内镜像",
+    "link": "https://chat.lightsdark.com/"    
+  },
+  {
+    "icon": "Cloud",
+    "name": "星空暗夜团队官网",
+    "link": "https://lightsdark.com/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "网易云音乐api",
+    "link": "https://music.api.songziheng.com/"
+  },
+  {
+    "icon": "Compass",
+    "name": "必应壁纸API",
+    "link": "https://bing.songziheng.com/"
+  },
+  {
+    "icon": "Fire",
+    "name": "免费AI画图",
+    "link": "https://ai.songziheng.com/"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "站点检测", 
     "link": "https://monitor.songziheng.com/"
   }
 ]
