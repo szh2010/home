@@ -1,62 +1,22 @@
 [
   {
-    "icon": "Blog",
-    "name": "小白站论坛",
-    "link": "https://zy.xbzhan.com/"
-  },
-  {
-    "icon": "Cloud",
-    "name": "星空数学",
-    "link": "https://math.lightsdark.com/"
-  },
-  {
-    "icon": "CompactDisc",
-    "name": "星空音乐",
-    "link": "https://music.songziheng.com/"
-  },
-  {
-    "icon": "Compass",
-    "name": "星空博客",
-    "link": "https://blog.songziheng.com/"
-  },
-  {
     "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://news.songziheng.com/"
-  },
-  {
-    "icon": "LaptopCode",
-    "name": "星空资源站",
-    "link": "https://ziyuan.lightsdark.com/"
-  },
-  {
-    "icon": "Blog",
-    "name": "Chatgpt国内镜像",
-    "link": "https://chat.lightsdark.com/"
-  },
-  {
-    "icon": "Cloud",
-    "name": "星空暗夜团队官网",
+    "name": "星空暗夜团队官方网站",
     "link": "https://lightsdark.com/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "网易云音乐api",
-    "link": "https://music.api.songziheng.com/"
-  },
-  {
-    "icon": "Compass",
-    "name": "必应壁纸API",
-    "link": "https://bing.songziheng.com/"
-  },
-  {
-    "icon": "Fire",
-    "name": "免费AI画图",
-    "link": "https://ai.songziheng.com/"
-  },
-  {
     "icon": "LaptopCode",
-    "name": "站点检测",
-    "link": "https://monitor.songziheng.com/"
+    "name": "视频搜索与观看平台",
+    "link": "https://tv.lightsdark.com/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "暗夜星空乐队官方网站",
+    "link": "https://band.lightsdark.com/"
+  },
+  {
+    "icon": "Blog",
+    "name": "AI交流平台",
+    "link": "https://chat.lightsdark.com/"
   }
 ]

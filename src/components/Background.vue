@@ -1,12 +1,12 @@
 <template>
   <div :class="store.backgroundShow ? 'cover show' : 'cover'">
     <img
-      v-show="store.imgLoadStatus"
+      v-show="store.imgLoadStatus && !bgFailed"
       :src="bgUrl"
       class="bg"
       alt="cover"
       @load="imgLoadComplete"
-      @error.once="imgLoadError"
+      @error="imgLoadError"
       @animationend="imgAnimationEnd"
     />
     <div :class="store.backgroundShow ? 'gray hidden' : 'gray'" />
@@ -30,6 +30,8 @@ import { Error } from "@icon-park/vue-next";
 const store = mainStore();
 const bgUrl = ref(null);
 const imgTimeout = ref(null);
+const isFallback = ref(false); // 是否已切换回默认壁纸
+const bgFailed = ref(false); // 默认壁纸也加载失败，隐藏壁纸
 const emit = defineEmits(["loadComplete"]);
 
 // 壁纸随机数
@@ -38,6 +40,8 @@ const bgRandom = Math.floor(Math.random() * 10 + 1);
 
 // 更换壁纸链接
 const changeBg = (type) => {
+  isFallback.value = false;
+  bgFailed.value = false;
   if (type == 0) {
     bgUrl.value = "https://img.scdn.io/i/6a23d44095b20_1780732992.webp";
   } else if (type == 1) {
@@ -68,15 +72,24 @@ const imgAnimationEnd = () => {
 
 // 图片显示失败
 const imgLoadError = () => {
-  console.error("壁纸加载失败：", bgUrl.value);
-  ElMessage({
-    message: "壁纸加载失败，已临时切换回默认",
-    icon: h(Error, {
-      theme: "filled",
-      fill: "#efefef",
-    }),
-  });
-  bgUrl.value = `/images/background${bgRandom}.jpg`;
+  if (!isFallback.value) {
+    console.error("壁纸加载失败：", bgUrl.value);
+    ElMessage({
+      message: "壁纸加载失败，已临时切换回默认",
+      icon: h(Error, {
+        theme: "filled",
+        fill: "#efefef",
+      }),
+    });
+    isFallback.value = true;
+    bgUrl.value = `/images/background${bgRandom}.jpg`;
+  } else {
+    // 默认壁纸也加载失败，不再显示壁纸
+    console.error("默认壁纸加载失败，已隐藏壁纸：", bgUrl.value);
+    bgFailed.value = true;
+    store.setImgLoadStatus(true);
+    emit("loadComplete");
+  }
 };
 
 // 监听壁纸切换
